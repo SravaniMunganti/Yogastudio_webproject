@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YOGA STUDIO-REGISTER</title>
+
+  <style>
+	input[type=text], input[type=password], select {
+  width: 50%;
+  padding: 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+*{
+	font-style:italic;
+	background:cover;
+	
+}
+
+
+
+a , button{
+  width: 60%;
+  background-color: black;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: 2px solid white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: white;
+  color:RoyalBlue;
+
+}
+
+div {
+  border-radius: 5px;
+  background-color:white;
+  padding: 90px;
+  }
+
+label {
+        display: inline-block;
+        width: 150px;
+      }
+.btn a{
+  background-color: black;
+  border: 2px solid white;
+  border-radius: 5px;
+  color: white;
+  padding: 12px 16px;
+  font-size: 20px;
+  cursor: pointer;
+  width : 33%;
+}
+
+/* Darker background on mouse-over */
+.btn:hover {
+  background-color: RoyalBlue;
+  
+}
+
+
+.sign-in-button{
+  background-color: #007bff; /* Set the background color */
+  color: #fff; /* Set the text color */
+  padding: 10px 20px; /* Add padding to the button */
+  border: none; /* Remove the default button border */
+  border-radius: 4px; /* Add rounded corners */
+  cursor: pointer; /* Add a cursor pointer on hover */
+}
+
+.sign-in-button:hover {
+  background-color: #0056b3; /* Change the background color on hover */
+}
+
+.button {
+      display: inline-block;
+      padding: 20px 50px;
+      background-color: #4CAF50;
+      color: white;
+      text-decoration: none;
+      border-radius: 4px;
+      font-weight: bold;
+      cursor: pointer;
+      margin-right: 10px;
+    }
+ .button:hover {
+      background-color: #45a049;
+    }
+
+
+
+    
+
+
+  </style>
+ </head>
+ <body>
+
+  <form action="register.jsp" method="post">
+  <div style="background-color:#;color:black;font-size:25px;margin:auto;border: 2px solid black; 
+  padding: 10px;">
+  <center><h3 style="text-decoration:underline;">REGISTER</h3></center>
+  <label for="fname">First name : </label>
+  <input type="text" id="fname" name="fname"><br>
+  
+  <label for="age">Age :  </label>
+  <input type="text" id="age" name="age"><br>
+  
+  <label>Good in :</label>
+  
+  <input type="radio" id="tel" name="fav_language" value="Telugu">
+  <label for="tel" style="width:80px;">Telugu</label>
+  
+  
+  
+  <input type="radio" id="eng" name="fav_language" value="English">
+  <label for="eng" style="width:80px;">English</label>
+  <br><br>
+
+  <label for="mail">Email Id : </label>
+  <input type="text" id="mail" name="mail"><br><br>
+	
+   <label for="pw">Password : </label>
+  <input type="password" id="pw" name="pwd"><br><br>
+
+  <label for="pw">Retype Password : </label>
+  <input type="password" id="pw" name="pwd"><br><br>
+  <input type="submit" class="sign-in-button" value="SIGN IN"/>
+  </div>
+<br><br>
+  <a href="index.html" class="b" style="text-decoration:none;">CANCEL</a>
+  </form>
+ </body>
+</html>

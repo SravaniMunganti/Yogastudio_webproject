@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Yoga Class Membership Types</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #ffffe5;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #fff;
+	  border : 2px solid black;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    .membership-card {
+      display: flex;
+      align-items: center;
+      padding: 10px;
+      border: 1px solid #ccc;
+      margin-bottom: 10px;
+    }
+
+    .membership-card img {
+      width: 80px;
+      height: 80px;
+      margin-right: 10px;
+    }
+
+    .membership-card .details {
+      flex-grow: 1;
+    }
+
+    .membership-card .details h2 {
+      margin: 0;
+      font-size: 18px;
+    }
+
+    .membership-card .details p {
+      margin: 0;
+      color: #666;
+    }
+
+    .membership-card .price {
+      font-weight: bold;
+    }
+
+    .membership-card button {
+      background-color: #4CAF50;
+      color: #fff;
+      border: none;
+      padding: 8px 16px;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 14px;
+      transition: background-color 0.3s;
+    }
+
+    .membership-card button:hover {
+      background-color: #45a049;
+    }
+
+    .payment-slip {
+      display: none;
+      margin-top: 20px;
+      padding: 20px;
+      border: 1px solid #ccc;
+    }
+
+    .payment-slip.active {
+      display: block;
+    }
+
+
+
+#btn1 {
+  position: fixed;
+ 
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;/* Adjust this value to control the distance from the bottom */
+}
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Yoga Class Membership Types</h1>
+
+    <div class="membership-card">
+      <img src="https://cdn.pixabay.com/photo/2017/09/07/23/26/exercise-2727123__340.png" alt="Beginner Yoga">
+      <div class="details">
+        <h2>Beginner Yoga</h2>
+        <p>Level: Beginner</p>
+        <p>Price: $500/month</p>
+      </div>
+      <button onclick="selectMembership('Beginner Yoga')">Select</button>
+    </div>
+
+    <div class="membership-card">
+      <img src="https://cdn.pixabay.com/photo/2017/02/01/10/20/exercise-2029428__340.png" alt="Intermediate Yoga">
+      <div class="details">
+        <h2>Intermediate Yoga</h2>
+        <p>Level: Intermediate</p>
+        <p>Price: $750/month</p>
+      </div>
+      <button onclick="selectMembership('Intermediate Yoga')">Select</button>
+    </div>
+
+    <div class="membership-card">
+      <img src="https://cdn.pixabay.com/photo/2016/11/05/21/03/exercise-1801507__340.png" alt="Advanced Yoga">
+      <div class="details">
+        <h2>Advanced Yoga</h2>
+        <p>Level: Advanced</p>
+        <p>Price: $1000/month</p>
+      </div>
+      <button onclick="selectMembership('Advanced Yoga')">Select</button>
+    </div>
+
+    <div class="payment-slip" id="paymentSlip">
+      <h2>Payment Slip</h2>
+      <p>Membership Type: <span id="selectedMembership"></span></p>
+      <p>Total Amount: <span id="selectedPrice"></span></p>
+      <p>Please make the payment to complete the registration.</p>
+
+
+	  <button type="submit" onclick ="navigateToPayment()" id = "btn1" >PAY</button>
+    </div>
+  </div>
+	
+  <script>
+
+  function navigateToPayment() {
+  var nextPage = "mempay.html"; // Replace with the actual URL of the destination page
+  window.location.href = nextPage;
+}
+    function selectMembership(membershipType) {
+      var price = 0;
+
+      switch (membershipType) {
+        case 'Beginner Yoga':
+          price = 500;
+          break;
+        case 'Intermediate Yoga':
+          price = 750;
+          break;
+        case 'Advanced Yoga':
+          price = 1000;
+          break;
+      }
+
+
+      document.getElementById('selectedMembership').textContent = membershipType;
+      document.getElementById('selectedPrice').textContent = '$' + price;
+      document.getElementById('paymentSlip').classList.add('active');
+    }
+
+	
+
+  </script>
+</body>
+</html>

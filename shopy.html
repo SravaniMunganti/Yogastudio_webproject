@@ -1,0 +1,172 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>YOGA STUDIO-SHOP</title>
+	<style>
+		*{
+			margin : 0;
+			padding : 0;
+			font-family : sans-serif;
+			box-sizing : border-box;
+			}
+
+
+
+.navigation {
+    background-color: #E9967A;
+    border: 2px solid #FECD45;
+    border-radius: 25px;
+    height: 50px;
+   
+
+    width: 75%;
+    margin: auto;
+    margin-top: 20px;
+ margin-bottom: 20px;
+    text-align: center;
+}
+
+.navigation ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.navigation ul li {
+   
+    padding : 5px 5px;
+    font-weight: bold;
+    font-style: italic;
+    text-decoration: none;
+    font-size: 25px;
+}
+		h1
+		{
+			text-align : center;
+			color : black;
+			padding : 20px;
+			font-size : 50px;
+		}
+		nav
+		{
+			background-color : green;
+			display : grid;
+			place-items : center;
+		}
+		nav ul
+		{
+			list-style-type : none;
+		}
+		nav ul a
+		{
+			display : inline-block;
+			padding : 20px;
+			text-decoration : none;
+			color : #000;
+			transtion : 0.2s ease-in;
+			font-size : 40px;
+		}
+		nav ul a:hover
+		{
+			background-color : black;
+			color : white;
+		}
+		button{
+			background-color : white; 
+		}
+		.items{
+			display : grid;
+			grid-template-columns : repeat(3, 1fr);
+			padding : 30px 20px;
+			grid-column-gap : 20px;
+			grid-row-gap : 30px;
+		}
+		.item img
+		{
+			width : 100%;
+			height : 300px;
+			object-fit : cover;
+			cursor : pointer;
+			transition : 0.2s ease;
+		}
+		.item img:hover{
+			transform : scale(1.04);
+		}
+		.item h4{
+			padding : 5px;
+			text-align : center;
+		}
+		.item button{
+			padding : 5px 30px;
+			border : none;
+			outline : none;
+			background-color : green;
+			color : white;
+			cursor : pointer;
+			border-radius : 4px;
+			font-size : 20px;
+			display : block;
+			margin : 0 auto;
+		
+		}
+		.item button:hover{
+				transform : scale(1.08);
+		}
+		@media screen and (max-width : 1000px){
+		.items{
+			grid-template-columns : repeat(2, 1fr);
+		}
+		}
+				
+
+	</style>
+	
+</head>
+<body>
+<h1> YOGA MATS</h1>
+
+
+
+
+<div class="navigation">
+<ul type="none">
+<li><a href="menuy.html" style="color:black;text-decoration: none;">HOME</a></li>
+  
+  <li><a href="abouty.html" style="color:black;text-decoration: none;">ABOUT</a></li>
+  
+ 
+ 
+</div>
+<section class="items">
+	
+	
+	<div class="item">
+		<img src="https://media.istockphoto.com/id/1479329944/photo/khaki-female-sport-fitness-t-shirt-mockup-flat-lay-on-wooden-background-summer-pilates.jpg?b=1&s=170667a&w=0&k=20&c=oM6LfBsM1z9sQq_KsKZxjDH6Rmj6loB2jRxGha3R3FU=">
+		<h4>ITEM-1</h4>
+		<button><a href="payment.html" style="color:white;text-decoration:none;">ORDER</a></button>
+</div>
+	
+<div class="item">
+		<img src="https://media.istockphoto.com/id/1484034943/photo/white-female-sport-fitness-t-shirt-mockup-flat-lay-on-wooden-background-summer-pilates.jpg?b=1&s=170667a&w=0&k=20&c=wBt6i8jL63bJfbGr2MXeF5KHfUR900titAccZtx1bsY=">
+		<h4>ITEM-2</h4>
+		<button><a href="payment.html" style="color:white;text-decoration:none;">ORDER</a></button>
+</div>
+	
+<div class="item">
+		<img src="https://media.istockphoto.com/id/1219302762/photo/black-yoga-mat-on-the-floor-of-a-bright-sunny-studio.jpg?b=1&s=170667a&w=0&k=20&c=cBuqgqjrqIdEHCo9LpFclJE63HERbBtV7Gcu4QI1tIc=">
+		<h4>ITEM-3</h4>
+		<button><a href="payment.html" style="color:white;text-decoration:none;">ORDER</a></button>
+</div>
+	
+<div class="item">
+		<img src="https://cdn.pixabay.com/photo/2019/01/31/21/20/yoga-3967979__340.jpg">
+		<h4>ITEM-4</h4>
+		<button><a href="payment.html" style="color:white; text-decoration:none;">ORDER</a></button>
+
+		
+</div>
+
+
+</body>
+</html>
